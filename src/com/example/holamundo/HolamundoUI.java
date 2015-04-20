@@ -30,7 +30,9 @@ public class HolamundoUI extends UI {
 		Button button = new Button("Click Me");
 		button.addClickListener(new Button.ClickListener() {
 			public void buttonClick(ClickEvent event) {
-				layout.addComponent(new Label("Thank you for clicking"));
+				Label text = new Label("Thank you for clicking");
+				text.setStyleName("title");
+				layout.addComponent(text);
 			}
 		});
 		layout.addComponent(button);
